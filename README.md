@@ -5,9 +5,9 @@ The code is provided here for individuals who would like to use the program for 
 
 This Python program removes hyperlinks, removes underlines under hyperlinked text, and changes hyperlinked blue text to black.
 At present, due to the difficulty of identifying locations in PDFs, this code imperfectly changes hyperlinked blue text to black.
-We have erred on the side of caution, and it is more likely that hyperlinked blue text will remain blue 
-than non-hyperlinked blue text will be changed to black.
-We will improve this code as workload permits.
+The blue to black change is non-standard, and the code relies on proximity to a hyperlink to identify the text that should be changed.
+I have used moderate sensitivity for hyperlink detection, meaning that the blue text must be in very close proximity to 
+the hyperlink in order to be changed from blue to black.
 
 A GUI interface collects the file path for the input folder and output folder.
 The input folder holds the original proposal PDFs that contain hyperlinks.
