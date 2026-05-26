@@ -1,5 +1,5 @@
 # NIH_Hyperlinks_Remover
-NIH does not allow hyperlinks, except for those created by SciENcv, unless otherwise specified in the NOFO per NOT-OD-20-174.
+NIH does not allow hyperlinks, except for those created by SciENcv or included in References, unless otherwise specified in the NOFO per NOT-OD-20-174.
 Going forward, the UMN Department of Psychiatry will be using this Python program to remove hyperlinks from proposal PDFs.
 The code is provided here for individuals who would like to use the program for their own PDFs or simply review the code.
 
