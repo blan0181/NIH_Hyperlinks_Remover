@@ -4,7 +4,6 @@ NIH PDF Cleaner - GUI Tool
 Removes hyperlinks from PDF documents for NIH proposal submissions.
 Turns blue text black.
 Removes underlines associated with hyperlinks.
-Highlights changes yellow and unallowable URLs orange in the tracked changes version
 
 Author: NIH Hyperlinks Project
 Version: 2.0.0
@@ -177,7 +176,6 @@ def add_transparency_extgstate(page, opacity=0.5):
 def remove_hyperlinks_from_pdf(input_path, output_path, create_tracked_changes=False, tracked_changes_path=None, write_clean=True, write_tracked=True):
     """
  Remove all hyperlinks from a PDF document and convert blue text to black.
-  Optionally create a tracked changes version highlighting changes in yellow.
 
    Args:
         input_path(Path): Path to input PDF file
@@ -739,8 +737,7 @@ def process_pdfs(input_dir, output_dir, overwrite=False, create_tracked_changes=
         input_dir(Path): Input directory path
         output_dir(Path): Output directory path
         overwrite(bool): Whether to overwrite existing files
-        create_tracked_changes(bool): Whether to create tracked changes versions
-
+        
     Returns:
         dict: Summary of processing results
     """
