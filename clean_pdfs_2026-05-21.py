@@ -182,10 +182,7 @@ def remove_hyperlinks_from_pdf(input_path, output_path, create_tracked_changes=F
    Args:
         input_path(Path): Path to input PDF file
         output_path(Path): Path to output PDF file
-        create_tracked_changes(bool): Whether to create a tracked changes version
-        tracked_changes_path(Path): Path for tracked changes PDF(required if create_tracked_changes=True and write_tracked=True)
         write_clean(bool): Whether to write the clean output
-        write_tracked(bool): Whether to write the tracked changes output
 
     Returns:
         dict: Processing results with hyperlink counts per page
